@@ -1,0 +1,150 @@
+/* Start the Index page - index.html */
+
+body {
+    background-color: #e9e8e8; /* cor do fundo do site */
+    margin: 0; /* margem de onde vai iniciar o site */
+    font-family: Montserrat,sans-serif;
+}
+
+#menu{
+    width: 100%;
+    height: 80px; /* tamanho da altura do menu */
+    background: linear-gradient(-90deg, rgba(0, 89, 138, .9) 0%, rgba(4, 171, 148, .9) 100%);
+    filter: drop-shadow(0px 5px 2px #A9A9A9);
+}
+
+.logo{
+    margin-left: 100px;
+    margin-top: 15px;
+    width: 200px; /* tamanho da logo */
+    position: absolute; /* para podermos inserir outras coisas no menu precisamos deixar a marca como absolute */
+}
+
+.entrar{
+    float: right;
+    margin-right: 100px;
+    margin-top: 18px;
+    background-color: #d64000;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 2px 2px #A9A9A9);
+}
+
+#entrar:hover{
+    background-color: #d60000;
+    transition: 0.5s;
+}
+
+.texto-botao {
+    margin-right: 12px;
+    color: #e9e8e8;
+    text-align: center;
+    float: right;
+    margin-top: 11px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.title{
+    margin-top: 80px;
+    margin-left: 100px;
+    color: white;
+    text-align: left;
+    width: 90%;
+    font-size: 20px;
+    filter: drop-shadow(0px 5px 2px #424242);
+}
+
+.texto-banner{
+    color: white;
+    text-align: left;
+    margin-top: 200px;
+    margin-left: 80px;
+    font-size: 15px;
+}
+
+.first-banner{
+    margin-top: 0px;
+    width: 100%;
+    height: 500px;
+    cursor: default;
+    position: absolute;
+}
+
+.slide{
+    margin: 0;
+    padding: 0;
+}
+
+.slider {
+    display: block;
+    height: 300px;
+    width: 500px;
+    margin: auto;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: #000;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+/*tira aquela barrinha que fica abaixo do link quando voce clica*/
+a:-webkit-any-link{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+/* usa sem o ponto na frente por ser uma estrutura*/
+#footer{
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(0deg,#00598a 0%,#04ab94 100%)
+}
